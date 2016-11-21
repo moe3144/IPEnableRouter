@@ -5,7 +5,7 @@ Imports System.Management
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        ''' Enable IP Routing in Registry by updateing the proper key.
+        '' Enable IP Routing in Registry by updateing the proper key.
         Dim key As RegistryKey = My.Computer.Registry.LocalMachine
         Dim subkey As RegistryKey
         subkey = key.OpenSubKey("SYSTEM\CurrentControlSet\services\Tcpip\Parameters", True)
